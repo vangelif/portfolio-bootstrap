@@ -45,8 +45,7 @@
             <!--scrollspy-->
             <!--cards-->
             <!--buttons-->
-            <!--badges-->
-            <!--modals-->
+
       
 
     <section class="intro">
@@ -146,27 +145,81 @@
     </section>
 
    
-    <section class="about-me">
-        <h2>About Us</h2>
-        <p>We are good people, we have a broad experience with website and feature building. <br>
-        Click on below button to forward a brochure of our latest projects.
+    <section class="about-me d-flex flex-column justify-content-center align-items-center m-3 p-3">
+        <h2 class="m-2 p-2">About Us</h2>
+        <p class="m-3 p-3 text-center">We are good people, we have a broad experience with website and feature building.
+        Click on below button to forward a brochure of our latest projects. <br>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Dolore harum reiciendis, cum magnam, suscipit doloremque blanditiis officiis eius deserunt rerum asperiores! Placeat esse ex ducimus incidunt, 
+        alias minima! Similique aliquid commodi magni, sunt voluptates et! Incidunt, animi recusandae dolore fugit aspernatur beatae, adipisci perspiciatis consequuntur 
+        similique tempora asperiores et eius, rem ratione corporis sequi cumque voluptas? Sapiente enim ea eveniet facere voluptate inventore unde vel et itaque, possimus architecto. 
+        Numquam deserunt, sunt laboriosam iusto magni quis in magnam cupiditate ad.
         </p>
-        <button><a href="#">Grab latest projects!!</a></button>   
+        <button class="m-3 p-3"><a href="#">Grab latest projects!!</a></button>   
     </section>
 
 
    
-    <section class="contact-form"></section>
-    <h2>
-        Let's connect!
-    </h2>
-    <ul class="social-media">
-        <li><a href="#" class="fab fa-twitter"></a></li>
-        <li><a href="#" class="fab fa-linkedin"></a></li>
-        <li><a href="#" class="fab fa-medium-m"></a></li>
-        <li><a href="#" class="fab fa-github"></a></li>                 
-    </ul> 
+<section class="contact-form m-3 p-3">
+    <div class="form-container container-fluid row">
 
+
+        <!--badges-->
+        <div class="our-stats col-md-4 d-flex flex-column justify-content-center align-items-center my-3">
+            <h3 class="text-center">Our Stats so far:</h3>
+            <button type="button" class="btn btn-warning mx-2 my-3">
+                Total Consultations <span class="badge bg-primary"> 1,204</span>
+              </button>
+              <button type="button" class="btn btn-warning mx-2 my-3">
+                Projects Completed <span class="badge bg-danger"> 457</span>
+              </button>
+              <button type="button" class="btn btn-warning mx-2 my-3">
+                Projects in Production <span class="badge bg-success"> 64</span>
+              </button>
+              <button type="button" class="btn btn-warning mx-2 my-3">
+                Awards Received <span class="badge bg-secondary"> 4</span>
+              </button>
+        </div>
+
+
+        <!--form message 'do not miss out this chance!'-->
+        <div class="form-msg col-md-4">
+            <h2 class="text-center">
+                We would be to help you in any way!
+            </h2>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error quibusdam iusto esse quos veritatis ullam cupiditate dignissimos magni molestias sit dolores 
+                architecto velit sed enim, 
+                quis fugit sapiente facere.
+            </p>
+            <ul class="social-media">
+                <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-github"></i></a></li>                       
+                <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-linkedin"></i></a></li>                 
+            </ul>  
+        </div>
+
+            
+            <!-- registration form with modals-->
+            <div class="register-form col-md-4">
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Your privacy will be protected.</div>
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+        </div>
+    </div>
+</section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
