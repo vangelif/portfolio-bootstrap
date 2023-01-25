@@ -4,56 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <link rel="stylesheet" href="./styles.css">
     <title>My Portfolio - Bootstrap</title>
 </head>
 <body>
-    <!--header-->
-        <nav class="container-fluid navbar-expand-lg bg-light">           
-              <a class="navbar-brand" href="#">Logo</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Projects
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Project One</a></li>
-                      <li><a class="dropdown-item" href="#">Project Two</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Cards Portfolio</a></li>
-                    </ul>
-                  </li>
-                </ul>             
-              </div>            
-          </nav>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark nav-bg">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="scrollspy-about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="scrollspy-portfolio" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Project 1</a></li>
+                  <li><a class="dropdown-item" href="#">Project 2</a></li>
+                  <li><a class="dropdown-item" href="#">Project 3</a></li>
+                  <li><a class="dropdown-item" href="#">Project 4</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scrollspy-contact">Contact</a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+            <!--scrollspy-->
+            <!--cards-->
+            <!--buttons-->
+            <!--badges-->
+            <!--modals-->
       
-     <div class="hero">
-        <h1>This is Ometman & Vangelis</h1>
-        <p>We are software developers, <br>
-           We will be glad to assist you with your software development needs.
-        </p>
-        <h2>
-            Let's connect!
-        </h2>
-        <ul class="social-media">
-            <li><a href="#" class="fab fa-twitter"></a></li>
-            <li><a href="#" class="fab fa-linkedin"></a></li>
-            <li><a href="#" class="fab fa-medium-m"></a></li>
-            <li><a href="#" class="fab fa-github"></a></li>                 
-        </ul>            
-    </div>
-    
+
+    <section class="intro">
+        <div class="hero container-fluid">
+            <div class="row my-4">
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="my-5">This is Ometman & Vangelis</h1>
+                    <p class="text-center">We are software developers, <br>
+                    We will be glad to assist you with your software development needs.
+                    </p>
+                    <h2 class="my-5">
+                        Let's connect!
+                    </h2>
+                    <ul class="social-media">
+                        <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-github"></i></a></li>                       
+                        <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-linkedin"></i></a></li>                 
+                    </ul>  
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="images/123.jpg" alt="">
+                </div>
+            </div>          
+        </div>
+    </section>
     <section class="works">
         <div class="work1">
             <img src="" alt="">

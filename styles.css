@@ -1,3 +1,34 @@
 ul {
     text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bg {
+    /* background-color: #6610f2; */
+    background-color: #6610f2
+    ;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    /* color: rgba(255,255,255,.55); */
+}
+
+.navbar-dark,
+.navbar-nav,
+.nav-link {
+    color: #fff !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+    color: #fff;
 }
