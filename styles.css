@@ -15,8 +15,10 @@ a {
     text-decoration: none;
 }
 
-.word-label {
-    height: 30px;
+.techs {
+    height: 20px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .row,
