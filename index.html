@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="./styles.css">
+    <title>My Portfolio - Bootstrap</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark nav-bg">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#scrollspyAbout">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#scrollspyCard-one">Project 1</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyCard-two">Project 2</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyCard-three">Project 3</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyCard-four">Project 4</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyContact">Contact</a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+            <!--scrollspy-->
+      
+
+    <section class="intro">
+        <div class="hero container-fluid">
+            <div class="row"> <!--removed my-4-->
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="mt-5 md-4 text-center">This is Ometman & Vangelis</h1>
+                    <p class="text-center fs-5 px-2">We are software developers, <br>
+                    We will be glad to assist you with your software development needs.
+                    </p>
+                    <h2 class="my-4 text-center">
+                        Let's connect!
+                    </h2>
+                    <ul class="social-media d-flex flex-row justify-content-center"> 
+                        <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-2x fa-twitter"></i></a></li>
+                        <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-2x fa-github"></i></a></li>                       
+                        <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-2x fa-linkedin"></i></a></li>                 
+                    </ul>  
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="images/123.jpg" alt="">
+                </div>
+            </div>          
+        </div>
+    </section>
+    <section class="works bg-secondary bg-light">
+        <div class="container-fluid pt-5">
+            <h2 class="fs-1 text-center pt-2">Our Works</h2>
+        </div>
+        <div class="container-fluid px-3 py-3">
+            <!--cards 1 and 2 -->
+            <div class="row d-flex flex-row justify-content-center align-items-center gy-3"> <!--row 1-->
+                <!-- first card positioned on the left -->
+                <div id="scrollspyCard-one" class="card col-md-6 bg-secondary bg-light border-0"> 
+                    <img class="card-image img-fluid rounded px-5 pt-5 pb-1" src="./images/portfolio-pic-1-resized.png" alt="our first Portfolio image">
+                    <div class="card-body px-5">
+                        <h2 class="card-title fs-2">Business Analysis </h2>
+                        <h3 class="fs-4">DIGITALYS - Full Stack (2016)</h3>
+                        <p class="card-text fs-5">Platform that analysis business data for decision making</p>
+                        <div class="mt-3 mb-5 d-flex flex-row justify-content-start gap-2">
+                            <span class="badge rounded-pill bg-primary techs">Html</span>
+                            <span class="badge rounded-pill bg-primary techs">CSS</span>
+                            <span class="badge rounded-pill bg-primary techs">Javascript</span>
+                            <span class="badge rounded-pill bg-primary techs">Ruby on Rails</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            
+                <!--2nd Card positioned on the right-->
+                <div id="scrollspyCard-two" class="card col-md-6 bg-secondary bg-light border-0">
+                    <img class="card-image img-fluid rounded px-5 pt-5 pb-1" src="./images/portfolio-pic-2-resized.png" alt="our first Portfolio image">
+                    <div class="card-body px-5">
+                        <h2 class="card-title fs-2">Tonic </h2>
+                        <h3 class="fs-4">CANOPY - Backend Dev (2015)</h3>
+                        <p class="card-text fs-5">A daily selection of privately personalized reads; 
+                            no accounts or sign-ups required.</p>
+                        <div class="mt-3 mb-5 d-flex flex-row justify-content-start gap-2">
+                            <span class="badge rounded-pill bg-primary techs">Html</span>
+                            <span class="badge rounded-pill bg-primary techs">CSS</span>
+                            <span class="badge rounded-pill bg-primary techs">Javascript</span>
+                            <span class="badge rounded-pill bg-primary techs">Ruby on Rails</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>   
+                </div>
+            <!--Cards 3 and 4-->
+            <div class="row d-flex flex-row justify-content-center align-items-center"> <!--row 1-->
+                <!-- first card positioned on the left -->
+                <div id="scrollspyCard-three" class="card col-md-6 bg-secondary bg-light border-0"> 
+                    <img class="card-image img-fluid rounded px-5 pt-5 pb-1" src="./images/portfolio-pic-3-resized.png" alt="our first Portfolio image">
+                    <div class="card-body px-5">
+                        <h2 class="card-title fs-2">Multi-Post Stories </h2>
+                        <h3 class="fs-4">FACEBOOK - Full Stack Dev (2015)</h3>
+                        <p class="card-text fs-5">Experimental content creation feature that allows 
+                            users to add to an existing 
+                            story over the course of a day without spamming their friends.</p>
+                        <div class="mt-3 mb-5 d-flex flex-row justify-content-start gap-2">
+                            <span class="badge rounded-pill bg-primary techs">Html</span>
+                            <span class="badge rounded-pill bg-primary techs">CSS</span>
+                            <span class="badge rounded-pill bg-primary techs">Javascript</span>
+                            <span class="badge rounded-pill bg-primary techs">Ruby on Rails</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            
+                <!--2nd Card positioned on the right-->
+                <div id="scrollspyCard-four" class="card col-md-6 bg-secondary bg-light border-0">
+                    <img class="card-image img-fluid rounded px-5 pt-5 pb-1" src="./images/portfolio-pic-4-resized.jpg" alt="our first Portfolio image">
+                    <div class="card-body px-5">
+                        <h2 class="card-title fs-2">Mobile Communication </h2>
+                        <h3 class="fs-4">APLEE TALK - Full Stack (2015)</h3>
+                        <p class="card-text fs-5">Light speed code on mobile devices for video messaging and calls</p>
+                        <div class="mt-3 mb-5 d-flex flex-row justify-content-start gap-2">
+                            <span class="badge rounded-pill bg-primary techs">Html</span>
+                            <span class="badge rounded-pill bg-primary techs">CSS</span>
+                            <span class="badge rounded-pill bg-primary techs">Javascript</span>
+                            <span class="badge rounded-pill bg-primary techs">Ruby on Rails</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>   
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+   
+    <section id="scrollspyAbout" class="about-me d-flex flex-column justify-content-center align-items-center m-3 p-3">
+        <h2 class="m-2 p-2">About Us</h2>
+        <p class="m-3 p-3 text-center">We are good people, we have a broad experience with website and feature building.
+        Click on below button to forward a brochure of our latest projects. <br>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Dolore harum reiciendis, cum magnam, suscipit doloremque blanditiis officiis eius deserunt rerum asperiores! Placeat esse ex ducimus incidunt, 
+        alias minima! Similique aliquid commodi magni, sunt voluptates et! Incidunt, animi recusandae dolore fugit aspernatur beatae, adipisci perspiciatis consequuntur 
+        similique tempora asperiores et eius, rem ratione corporis sequi cumque voluptas? Sapiente enim ea eveniet facere voluptate inventore unde vel et itaque, possimus architecto. 
+        Numquam deserunt, sunt laboriosam iusto magni quis in magnam cupiditate ad.
+        </p>
+        <button class="m-3 p-3"><a href="#">Grab latest projects!!</a></button>   
+    </section>
+
+
+   
+<section id="scrollspyContact" class="contact-form m-3 p-3">
+    <div class="form-container container-fluid row">
+
+
+        <!--badges-->
+        <div class="our-stats col-md-4 d-flex flex-column justify-content-evenly align-items-center my-3">
+            <h2 class="text-center">Our Stats so far:</h2>
+            <button type="button" class="btn btn-warning mx-2 my-3">
+                Total Consultations <span class="badge bg-primary"> 1,204</span>
+              </button>
+              <button type="button" class="btn btn-warning mx-2 my-3">
+                Projects Completed <span class="badge bg-danger"> 457</span>
+              </button>
+              <button type="button" class="btn btn-warning mx-2 my-3">
+                Projects in Production <span class="badge bg-success"> 64</span>
+              </button>
+              <button type="button" class="btn btn-warning mx-2 my-3">
+                Awards Received <span class="badge bg-secondary"> 4</span>
+              </button>
+        </div>
+
+
+        <!--form message 'do not miss out this chance!'-->
+        <div class="form-msg col-md-4 d-flex flex-column justify-content-center align-items-center my-2 py-2">
+            <h2 class="text-center mx-2 my-3">
+                We would be to help you in any way!
+            </h2>
+            <p class="text-center mx-2 my-3">
+                Click on whether your company require development of a webpage or a specific feature. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum error quibusdam iusto esse quos veritatis ullam cupiditate dignissimos magni molestias sit dolores 
+                architecto velit sed enim, 
+                quis fugit sapiente facere.
+            </p>
+            <ul class="social-media mx-2 my-3">
+                <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-github"></i></a></li>                       
+                <li class="d-inline-block mx-2"><a href="#"><i class="fab fa-linkedin"></i></a></li>                 
+            </ul>  
+        </div>
+
+            
+            <!-- registration form with modals-->
+            <div class="register-form col-md-4">
+                <form class="d-flex flex-column justify-content-center align-items-center my-1">
+                    <div class="mb-3 d-flex flex-column justify-content-center align-items-center my-1">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Your privacy will be protected.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+
+                <!--mobal with a form for webpage, feature or collab-->
+                <div class="three-buttons d-flex flex-row justify-content-evenly align-items-center my-3 py-3">
+                <button type="button" class="btn btn-secondary mx-2 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Webpage</button>
+                <button type="button" class="btn btn-secondary mx-2 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Feature</button>
+                <button type="button" class="btn btn-secondary mx-2 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Collab</button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Write your message</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Describe your requirement:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
