@@ -144,10 +144,13 @@ Example:
 
 👤 **Vangelis**
 
-- GitHub: [@githubhandle](https://github.com/VangeliVangeli)
+- GitHub: [@githubhandle](https://github.com/vangelif)
 - Twitter: [@twitterhandle](https://twitter.com/vangfot)
 
 👤 **Ometman**
+
+- GitHub: [@githubhandle](https://github.com/ometman)
+- Twitter: [@twitterhandle](https://twitter.com/cometman)
 
 
 ## 🔭 Future Features <a name="future-features"></a>
